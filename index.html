@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textile Engineering Hub - Smart Digital Ecosystem</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Futuristic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Dynamic Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Cursor Spotlight Effect -->
+    <div class="cursor-spotlight" id="cursorSpotlight"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="brand-logo-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                </div>
+                <span class="brand-text">Textile<span class="highlight">Hub</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-container" id="home">
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                <span>Next-Gen Textile Intelligence</span>
+            </div>
+            <h1 class="hero-title">Textile Engineering Hub</h1>
+            <h2 class="hero-subtitle">Smart Digital Ecosystem for Textile Engineering Students</h2>
+            <p class="hero-description">Learning, Research, AI Assistance, Engineering Tools, Innovation, and Digital Resources—all in one place.</p>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="cards-section">
+            
+            <!-- Left Card: Learning Shelve -->
+            <div class="portal-card" data-tilt>
+                <div class="card-glow-border"></div>
+                <div class="card-shine"></div>
+                <div class="card-content">
+                    <div class="card-header-flex">
+                        <div class="card-icon-wrapper library-icon">
+                            <!-- Replace src with your Learning Shelve logo file name -->
+                            <img src="ls-logo.png" alt="Learning Shelve Logo" class="brand-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <svg style="display:none;" viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        </div>
+                        <span class="card-badge">Digital Library</span>
+                    </div>
+                    
+                    <h3 class="card-title">📚 Learning Shelve</h3>
+                    <p class="card-desc">A comprehensive collection of academic resources for textile engineering students.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Books</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Class Notes</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Lab Reports</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Question Bank</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Research Papers</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Thesis</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Journal Articles</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Course Materials</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="portal-btn btn-library" onclick="navigateTo('learning-shelve.html')">
+                            <span>Open Learning Shelve</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Card: TexA -->
+            <div class="portal-card" data-tilt>
+                <div class="card-glow-border"></div>
+                <div class="card-shine"></div>
+                <div class="card-content">
+                    <div class="card-header-flex">
+                        <div class="card-icon-wrapper texa-icon">
+                            <!-- Replace src with your TexA logo file name -->
+                            <img src="texa-logo.png" alt="TexA Logo" class="brand-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <svg style="display:none;" viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <span class="card-badge ai-badge">AI Powered</span>
+                    </div>
+                    
+                    <h3 class="card-title">🧵 TexA</h3>
+                    <p class="card-desc">An intelligent assistant designed specifically for textile engineering students.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>AI Chat</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Textile Calculator</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Fiber Database</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Unit Converter</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Fabric Analysis</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>GSM Calculator</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Warp & Weft Tools</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Engineering Utilities</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="portal-btn btn-texa" onclick="navigateTo('texa.html')">
+                            <span>Launch TexA</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer Information -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Textile Engineering Hub. Engineered for Future Innovators.</p>
+            <div class="footer-links">
+                <a href="#about">Privacy Policy</a>
+                <a href="#contact">Terms of Service</a>
+                <a href="#contact">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
